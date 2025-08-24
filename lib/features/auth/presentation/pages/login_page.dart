@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:sportiv/features/auth/presentation/pages/register_page.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -83,9 +83,10 @@ class LoginPage extends StatelessWidget {
                 // Link de cadastro
                 TextButton(
                   onPressed: () {
-                    //
-                    // TO DO: navegação p/ cadastro
-                    //
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const CadastroPage()),
+                    );
                   },
                   child: const Text('Ainda não sou cadastrado'),
                 ),
