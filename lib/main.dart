@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sportiv/features/auth/presentation/pages/login_page.dart';
+import 'package:sportiv/features/auth/presentation/pages/login/login_page.dart';
 
 void main() {
   runApp(const Sportiv());
@@ -10,7 +10,7 @@ class Sportiv extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Sportiv',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),

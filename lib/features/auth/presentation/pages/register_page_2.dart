@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sportiv/features/auth/presentation/pages/login_page.dart';
+import 'package:sportiv/features/auth/presentation/pages/login/login_page.dart';
 
 class CadastroPage2 extends StatefulWidget {
   const CadastroPage2({super.key});
