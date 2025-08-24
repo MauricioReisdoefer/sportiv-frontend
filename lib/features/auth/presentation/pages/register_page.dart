@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sportiv/features/auth/presentation/pages/login_page.dart';
+import 'package:sportiv/features/auth/presentation/pages/register_page_2.dart';
 
 class CadastroPage extends StatefulWidget {
   const CadastroPage({super.key});
@@ -139,9 +140,11 @@ class _CadastroPageState extends State<CadastroPage> {
               // Botão Cadastrar
               FilledButton(
                   onPressed: () {
-                    //
-                    // TO DO: lógica de login
-                    //
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CadastroPage2()),
+                    );
                   },
                   style: FilledButton.styleFrom(
                     minimumSize: const Size.fromHeight(48),
