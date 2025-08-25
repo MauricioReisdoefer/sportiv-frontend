@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sportiv/features/auth/presentation/pages/register_page.dart';
+import 'package:sportiv/features/auth/presentation/pages/register/register_page.dart';
 import 'package:sportiv/features/auth/presentation/bloc/login/login_bloc.dart';
 import 'package:sportiv/features/auth/presentation/bloc/login/login_state.dart';
 import 'package:sportiv/features/auth/presentation/bloc/login/login_event.dart';
@@ -79,7 +79,7 @@ class LoginForm extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const CadastroPage()),
+              MaterialPageRoute(builder: (context) => const RegisterPage()),
             );
           },
           child: const Text('Ainda não sou cadastrado'),
